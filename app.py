@@ -1,4 +1,4 @@
-﻿from flask import Flask, render_template_string, request, jsonify
+from flask import Flask, render_template_string, request, jsonify
 
 app = Flask(__name__)
 
@@ -81,6 +81,7 @@ HTML = """
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>BM Enterprise – Scrap Dealer Bangalore</title>
+<meta name="google-site-verification" content="Oa09PKFvkjOrQmRhoLfG4_Th_SpZOKYIhgHAD1-P9fc" />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 <style>
@@ -681,7 +682,7 @@ footer::before{
 <body>
 
 <!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/919876543210" class="float-btn" target="_blank" title="WhatsApp Us">
+<a href="https://wa.me/917795367887" class="float-btn" target="_blank" title="WhatsApp Us">
   <i class="fab fa-whatsapp"></i>
 </a>
 <button class="scroll-top" id="scrollTop">
@@ -732,7 +733,7 @@ footer::before{
     Best prices · Free doorstep pickup · Instant cash payment.</p>
     <div class="hero-btns">
       <a href="#contact" class="btn-primary">📋 Get Free Quote</a>
-      <a href="tel:+919876543210" class="btn-secondary">📞 Book Pickup Now</a>
+      <a href="tel:+917795367887" class="btn-secondary">📞 Book Pickup Now</a>
     </div>
     <div class="hero-stats">
       <div class="stat-box zoom-in d1">
@@ -986,7 +987,7 @@ footer::before{
       <div class="footer-social">
         <a class="social-icon" href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         <a class="social-icon" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a class="social-icon" href="https://wa.me/919876543210" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a class="social-icon" href="https://wa.me/917795367887" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         <a class="social-icon" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
       </div>
     </div>
@@ -1012,7 +1013,7 @@ footer::before{
       <h4>Contact Info</h4>
       <ul>
         <li><a href="#"><i class="fas fa-map-marker-alt"></i>Bangalore, Karnataka</a></li>
-        <li><a href="tel:+919876543210"><i class="fas fa-phone"></i>{{ contact_info.phone1 }}</a></li>
+        <li><a href="tel:+917795367887"><i class="fas fa-phone"></i>{{ contact_info.phone1 }}</a></li>
         <li><a href="mailto:info@bmenterprise.in"><i class="fas fa-envelope"></i>{{ contact_info.email1 }}</a></li>
         <li><a href="#"><i class="fas fa-clock"></i>Mon–Sat: 8AM–7PM</a></li>
       </ul>
