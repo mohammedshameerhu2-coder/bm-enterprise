@@ -701,7 +701,7 @@ footer::before{
 <body>
 
 <!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/919876543210" class="float-btn" target="_blank" title="WhatsApp Us">
+<a href="https://wa.me/917795367887" class="float-btn" target="_blank" title="WhatsApp Us">
   <i class="fab fa-whatsapp"></i>
 </a>
 <button class="scroll-top" id="scrollTop">
@@ -736,7 +736,7 @@ footer::before{
       <p>Professional scrap collection in Bangalore with transparent rates, accurate weighing, and dependable doorstep pickup for households, offices, and industries.</p>
       <div class="hero-actions">
         <a href="#contact" class="btn-primary">Get a Free Quote</a>
-        <a href="tel:+919876543210" class="btn-secondary">Book Pickup</a>
+        <a href="tel:+917795367887" class="btn-secondary">Book Pickup</a>
       </div>
       <div class="hero-stats">
       <div class="stat-box zoom-in d1">
@@ -991,7 +991,7 @@ footer::before{
       <div class="footer-social">
         <a class="social-icon" href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         <a class="social-icon" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a class="social-icon" href="https://wa.me/919876543210" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a class="social-icon" href="https://wa.me/917795367887" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         <a class="social-icon" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
       </div>
     </div>
@@ -1017,7 +1017,7 @@ footer::before{
       <h4>Contact Info</h4>
       <ul>
         <li><a href="#"><i class="fas fa-map-marker-alt"></i>Bangalore, Karnataka</a></li>
-        <li><a href="tel:+919876543210"><i class="fas fa-phone"></i>{{ contact_info.phone1 }}</a></li>
+        <li><a href="tel:+917795367887"><i class="fas fa-phone"></i>{{ contact_info.phone1 }}</a></li>
         <li><a href="mailto:info@bmenterprise.in"><i class="fas fa-envelope"></i>{{ contact_info.email1 }}</a></li>
         <li><a href="#"><i class="fas fa-clock"></i>Mon–Sat: 8AM–7PM</a></li>
       </ul>
