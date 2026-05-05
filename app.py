@@ -66,7 +66,7 @@ contact_info = {
     "address": "BM ENTERPRISE, Address: No 87/50 , Kumbalgudu, Mysore Road, Bangalore Industrial  Area : Thagachaguppe ,  Taluk : Kumbalgodu  , District : Bangalore Urban",
     "phone1":  "+91 9900887689",
     "phone2":  "+91 7795367887",
-    "email1":  "bmenterprise684@gmail.com",
+    "email1":  "bmenterprise684@gmail.comg",
     "hours":   "Mon – Sat: 8:00 AM – 7:00 PM | Sunday: 9:00 AM – 2:00 PM",
 }
 
@@ -81,28 +81,27 @@ HTML = """
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>BM Enterprise – Scrap Dealer Bangalore</title>
-<meta name="google-site-verification" content="Oa09PKFvkjOrQmRhoLfG4_Th_SpZOKYIhgHAD1-P9fc" />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 <style>
 /* ===================== RESET & ROOT ===================== */
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --ocean1:#006994;
-  --ocean2:#0099cc;
-  --ocean3:#00bcd4;
-  --ocean4:#4dd0e1;
-  --ocean5:#b2ebf2;
-  --oceanlight:#e0f7fa;
-  --oceandark:#003d5c;
-  --oceandeep:#001f3f;
+  --ocean1:#8f745f;
+  --ocean2:#a58b78;
+  --ocean3:#b7a08f;
+  --ocean4:#c8b8ab;
+  --ocean5:#e6d8cb;
+  --oceanlight:#f5ede6;
+  --oceandark:#4b423d;
+  --oceandeep:#3d3632;
   --white:#ffffff;
-  --gray:#f0fbff;
-  --text:#0d2d3a;
-  --green:#00897b;
+  --gray:#efefef;
+  --text:#3f3834;
+  --green:#5d7a66;
 }
 html{scroll-behavior:smooth}
-body{font-family:'Poppins',sans-serif;color:var(--text);background:#fff;overflow-x:hidden}
+body{font-family:'Inter',sans-serif;color:var(--text);background:#f6efe8;overflow-x:hidden}
 
 /* ===================== SCROLLBAR ===================== */
 ::-webkit-scrollbar{width:8px}
@@ -151,7 +150,7 @@ body{font-family:'Poppins',sans-serif;color:var(--text);background:#fff;overflow
   background:linear-gradient(135deg,var(--ocean1),var(--ocean3));
   color:#fff;border:none;padding:11px 24px;
   border-radius:25px;font-weight:700;cursor:pointer;
-  font-family:'Poppins',sans-serif;font-size:13px;
+  font-family:'Inter',sans-serif;font-size:13px;
   box-shadow:0 4px 20px rgba(0,153,204,0.4);
   transition:all 0.3s;position:relative;overflow:hidden;
 }
@@ -166,14 +165,64 @@ body{font-family:'Poppins',sans-serif;color:var(--text);background:#fff;overflow
 /* ===================== HERO ===================== */
 .hero{
   min-height:100vh;
-  background:linear-gradient(160deg,#001f3f 0%,#003d5c 25%,#006994 55%,#0099cc 80%,#00bcd4 100%);
+  background:linear-gradient(170deg,#f7efe8 0%,#f2e8df 100%);
   display:flex;align-items:center;justify-content:center;
-  text-align:center;padding:100px 5% 80px;
+  text-align:center;padding:120px 5% 80px;
   position:relative;overflow:hidden;
 }
+.hero::before{
+  content:'';
+  position:absolute;
+  width:420px;height:420px;left:-120px;top:40px;
+  background:radial-gradient(circle,rgba(143,116,95,0.14) 0%,rgba(143,116,95,0) 65%);
+  pointer-events:none;
+}
+.hero-card{
+  width:min(1100px,100%);
+  background:#ffffff;
+  border-radius:26px;
+  padding:46px 38px;
+  box-shadow:0 20px 60px rgba(60,48,38,0.12);
+  border:1px solid #eadfd7;
+  display:block;
+  align-items:center;
+  position:relative;
+  z-index:2;
+}
+.hero-kicker{
+  font-size:13px;
+  letter-spacing:2.5px;
+  text-transform:uppercase;
+  color:#7f6555;
+  margin-bottom:16px;
+  font-weight:600;
+}
+.hero-copy h1{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(2.1rem,4.8vw,4.2rem);
+  color:#1f1814;
+  line-height:1.06;
+  margin-bottom:16px;
+}
+.hero-copy h1 .brand{
+  color:#7c5d4b;
+  background:none;
+  -webkit-text-fill-color:inherit;
+}
+.hero-copy p{
+  color:#5c4d43;
+  font-size:1.02rem;
+  line-height:1.8;
+  max-width:700px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:28px;
+}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.hero-actions{justify-content:center}
 
 /* Animated Ocean Waves */
-.ocean{position:absolute;bottom:0;left:0;width:100%;height:180px;overflow:hidden}
+.ocean{display:none}
 .wave{
   position:absolute;bottom:0;left:0;width:200%;height:100%;
   background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120'%3E%3Cpath fill='rgba(255,255,255,0.08)' d='M0,60 C240,100 480,20 720,60 C960,100 1200,20 1440,60 L1440,120 L0,120 Z'/%3E%3C/svg%3E") repeat-x;
@@ -195,7 +244,7 @@ body{font-family:'Poppins',sans-serif;color:var(--text);background:#fff;overflow
 @keyframes waveMove{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 /* Floating Bubbles */
-.bubbles{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;overflow:hidden}
+.bubbles{display:none}
 .bubble{
   position:absolute;border-radius:50%;
   background:radial-gradient(circle at 30% 30%,rgba(255,255,255,0.3),rgba(255,255,255,0.05));
@@ -218,7 +267,7 @@ body{font-family:'Poppins',sans-serif;color:var(--text);background:#fff;overflow
 }
 
 /* Glowing Particles */
-.particles{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none}
+.particles{display:none}
 .particle{
   position:absolute;width:4px;height:4px;border-radius:50%;
   background:rgba(77,208,225,0.8);
@@ -230,43 +279,13 @@ body{font-family:'Poppins',sans-serif;color:var(--text);background:#fff;overflow
   100%{transform:translateY(-600px) rotate(720deg);opacity:0}
 }
 
-.hero-content{position:relative;z-index:5;max-width:850px}
-.hero-badge{
-  display:inline-flex;align-items:center;gap:8px;
-  background:rgba(255,255,255,0.12);
-  backdrop-filter:blur(10px);
-  color:#fff;padding:8px 22px;border-radius:25px;
-  font-size:13px;font-weight:600;margin-bottom:25px;
-  border:1px solid rgba(255,255,255,0.25);
-  box-shadow:0 4px 20px rgba(0,0,0,0.2);
-  animation:badgePulse 3s ease-in-out infinite;
-}
-@keyframes badgePulse{0%,100%{box-shadow:0 4px 20px rgba(0,0,0,0.2)}50%{box-shadow:0 4px 30px rgba(77,208,225,0.5)}}
-.hero h1{
-  font-size:clamp(2.8rem,7vw,5rem);font-weight:800;
-  color:#fff;line-height:1.1;margin-bottom:20px;
-  text-shadow:0 4px 30px rgba(0,0,0,0.3);
-}
-.hero h1 .brand{
-  background:linear-gradient(135deg,#4dd0e1,#80deea,#ffffff);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;
-  animation:shimmer 3s linear infinite;
-  background-size:200% auto;
-}
-@keyframes shimmer{0%{background-position:0% center}100%{background-position:200% center}}
-.hero p{
-  font-size:clamp(1rem,2vw,1.15rem);color:rgba(255,255,255,0.88);
-  margin-bottom:40px;line-height:1.8;
-  text-shadow:0 2px 10px rgba(0,0,0,0.2);
-}
-.hero-btns{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-bottom:50px}
+.hero-content{position:relative;z-index:5}
 .btn-primary{
-  background:linear-gradient(135deg,#fff,#e0f7fa);
-  color:var(--ocean1);padding:15px 35px;border-radius:35px;
+  background:#2e1f17;
+  color:#fff;padding:14px 28px;border-radius:10px;
   text-decoration:none;font-weight:800;font-size:15px;
-  box-shadow:0 8px 30px rgba(0,0,0,0.25);transition:all 0.3s;
-  border:none;cursor:pointer;font-family:'Poppins',sans-serif;
+  box-shadow:0 10px 28px rgba(46,31,23,0.25);transition:all 0.3s;
+  border:none;cursor:pointer;font-family:'Inter',sans-serif;
   position:relative;overflow:hidden;
 }
 .btn-primary::after{
@@ -278,59 +297,57 @@ body{font-family:'Poppins',sans-serif;color:var(--text);background:#fff;overflow
 .btn-primary:hover::after{width:300px;height:300px}
 .btn-primary:hover{transform:translateY(-4px);box-shadow:0 15px 40px rgba(0,0,0,0.35)}
 .btn-secondary{
-  background:transparent;color:#fff;padding:15px 35px;border-radius:35px;
+  background:#fff;color:#2e1f17;padding:14px 28px;border-radius:10px;
   text-decoration:none;font-weight:700;font-size:15px;
-  border:2px solid rgba(255,255,255,0.7);transition:all 0.3s;
+  border:1px solid #d7c7bb;transition:all 0.3s;
   backdrop-filter:blur(5px);position:relative;overflow:hidden;
 }
 .btn-secondary:hover{
-  background:rgba(255,255,255,0.15);
-  border-color:#fff;transform:translateY(-4px);
-  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+  background:#f8f1ec;
+  border-color:#c7b0a2;transform:translateY(-4px);
+  box-shadow:0 10px 30px rgba(46,31,23,0.18);
 }
 
 /* Stats Counter */
 .hero-stats{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
 .stat-box{
-  background:rgba(255,255,255,0.1);
-  backdrop-filter:blur(15px);
-  padding:20px 28px;border-radius:20px;text-align:center;
-  border:1px solid rgba(255,255,255,0.2);
-  box-shadow:0 8px 32px rgba(0,0,0,0.2);
+  background:#f9f4ef;
+  padding:18px 22px;border-radius:14px;text-align:center;
+  border:1px solid #eadfd7;
+  box-shadow:none;
   transition:all 0.3s;cursor:default;
 }
-.stat-box:hover{background:rgba(255,255,255,0.2);transform:translateY(-5px)}
+.stat-box:hover{background:#fff;transform:translateY(-5px)}
 .stat-box h3{
-  font-size:2rem;font-weight:800;color:#fff;
-  text-shadow:0 0 20px rgba(77,208,225,0.7);
+  font-size:2rem;font-weight:800;color:#2e1f17;
 }
-.stat-box p{font-size:12px;color:rgba(255,255,255,0.8);font-weight:500;margin-top:4px}
+.stat-box p{font-size:12px;color:#7a6659;font-weight:500;margin-top:4px}
 
 /* ===================== TICKER ===================== */
 .ticker{
-  background:linear-gradient(90deg,var(--oceandeep),var(--ocean1),var(--oceandark));
-  color:#fff;padding:14px 0;overflow:hidden;
+  background:#e9ddd1;
+  color:#4b423d;padding:14px 0;overflow:hidden;
   position:relative;z-index:10;
-  box-shadow:0 4px 20px rgba(0,31,63,0.5);
+  box-shadow:0 3px 12px rgba(60,48,38,0.1);
 }
 .ticker::before,.ticker::after{
   content:'';position:absolute;top:0;width:100px;height:100%;z-index:1;
 }
-.ticker::before{left:0;background:linear-gradient(90deg,var(--oceandeep),transparent)}
-.ticker::after{right:0;background:linear-gradient(-90deg,var(--oceandeep),transparent)}
+.ticker::before{left:0;background:linear-gradient(90deg,#e9ddd1,transparent)}
+.ticker::after{right:0;background:linear-gradient(-90deg,#e9ddd1,transparent)}
 .ticker-inner{display:flex;animation:ticker 28s linear infinite;white-space:nowrap}
 .ticker-inner span{
   padding:0 35px;font-size:14px;font-weight:600;
   display:flex;align-items:center;gap:8px;
 }
-.ticker-inner span::before{content:'🌊';font-size:12px}
+.ticker-inner span::before{content:'•';font-size:12px}
 @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 /* ===================== SECTIONS ===================== */
 .section-pad{padding:90px 5%}
 .white-bg{background:#fff}
 .gray-bg{background:var(--gray)}
-.ocean-bg{background:linear-gradient(135deg,var(--oceandeep) 0%,var(--ocean1) 100%);color:#fff}
+.ocean-bg{background:linear-gradient(135deg,#f0e5dc 0%,#eadfd4 100%);color:var(--text)}
 
 .section-title{text-align:center;margin-bottom:55px}
 .section-title h2{
@@ -343,12 +360,12 @@ body{font-family:'Poppins',sans-serif;color:var(--text);background:#fff;overflow
   border-radius:2px;animation:lineGrow 1s ease forwards 0.5s;
 }
 @keyframes lineGrow{to{width:80px}}
-.section-title.light h2{color:#fff}
+.section-title.light h2{color:var(--oceandark)}
 .section-title p{
   color:#666;margin-top:20px;font-size:16px;
   max-width:600px;margin-left:auto;margin-right:auto;line-height:1.7;
 }
-.section-title.light p{color:rgba(255,255,255,0.75)}
+.section-title.light p{color:#6a5b52}
 
 /* ===================== SERVICES ===================== */
 .services{background:var(--gray)}
@@ -427,8 +444,8 @@ body{font-family:'Poppins',sans-serif;color:var(--text);background:#fff;overflow
 /* ===================== WHY CHOOSE ===================== */
 .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px}
 .why-card{
-  background:rgba(255,255,255,0.08);backdrop-filter:blur(15px);
-  border:1px solid rgba(255,255,255,0.15);border-radius:24px;
+  background:#fff;
+  border:1px solid #e4d7cc;border-radius:24px;
   padding:35px 22px;text-align:center;transition:all 0.4s;
   position:relative;overflow:hidden;
 }
@@ -439,13 +456,13 @@ body{font-family:'Poppins',sans-serif;color:var(--text);background:#fff;overflow
 }
 .why-card:hover::before{opacity:1}
 .why-card:hover{
-  background:rgba(255,255,255,0.18);transform:translateY(-8px);
-  box-shadow:0 20px 50px rgba(0,0,0,0.3);border-color:rgba(255,255,255,0.35);
+  background:#fff;transform:translateY(-8px);
+  box-shadow:0 16px 34px rgba(60,48,38,0.14);border-color:#d7c3b5;
 }
 .why-card .icon{font-size:42px;margin-bottom:18px;display:block;transition:transform 0.4s}
 .why-card:hover .icon{transform:scale(1.3) rotate(10deg)}
-.why-card h3{font-size:1.1rem;font-weight:700;margin-bottom:10px;color:#fff}
-.why-card p{font-size:13px;opacity:0.8;line-height:1.7;color:rgba(255,255,255,0.85)}
+.why-card h3{font-size:1.1rem;font-weight:700;margin-bottom:10px;color:var(--oceandark)}
+.why-card p{font-size:13px;opacity:1;line-height:1.7;color:#6a5b52}
 
 /* ===================== HOW IT WORKS ===================== */
 .how{background:var(--gray)}
@@ -543,7 +560,7 @@ body{font-family:'Poppins',sans-serif;color:var(--text);background:#fff;overflow
 .form-group input,.form-group select,.form-group textarea{
   width:100%;padding:13px 16px;
   border:2px solid rgba(0,188,212,0.2);
-  border-radius:12px;font-family:'Poppins',sans-serif;font-size:13px;
+  border-radius:12px;font-family:'Inter',sans-serif;font-size:13px;
   color:var(--text);transition:all 0.3s;background:#fff;outline:none;
 }
 .form-group input:focus,.form-group select:focus,.form-group textarea:focus{
@@ -557,7 +574,7 @@ body{font-family:'Poppins',sans-serif;color:var(--text);background:#fff;overflow
   width:100%;background:linear-gradient(135deg,var(--ocean1),var(--ocean3));
   color:#fff;border:none;padding:16px;border-radius:14px;
   font-weight:800;font-size:15px;cursor:pointer;
-  font-family:'Poppins',sans-serif;transition:all 0.3s;
+  font-family:'Inter',sans-serif;transition:all 0.3s;
   box-shadow:0 6px 25px rgba(0,153,204,0.4);
   position:relative;overflow:hidden;
 }
@@ -580,7 +597,7 @@ body{font-family:'Poppins',sans-serif;color:var(--text);background:#fff;overflow
 
 /* ===================== FOOTER ===================== */
 footer{
-  background:linear-gradient(135deg,var(--oceandeep) 0%,#002d4a 50%,var(--oceandark) 100%);
+  background:linear-gradient(135deg,#3f3834 0%,#4a413c 50%,#5a4f48 100%);
   color:#fff;padding:70px 5% 30px;position:relative;overflow:hidden;
 }
 footer::before{
@@ -671,6 +688,8 @@ footer::before{
   .nav-links{display:none}
   .contact-grid{grid-template-columns:1fr}
   .form-row{grid-template-columns:1fr}
+  .hero-card{grid-template-columns:1fr;padding:20px}
+  .hero-media{min-height:280px}
 }
 @media(max-width:600px){
   .footer-grid{grid-template-columns:1fr}
@@ -682,7 +701,7 @@ footer::before{
 <body>
 
 <!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/917795367887" class="float-btn" target="_blank" title="WhatsApp Us">
+<a href="https://wa.me/919876543210" class="float-btn" target="_blank" title="WhatsApp Us">
   <i class="fab fa-whatsapp"></i>
 </a>
 <button class="scroll-top" id="scrollTop">
@@ -710,32 +729,16 @@ footer::before{
 
 <!-- ===================== HERO ===================== -->
 <section class="hero" id="home">
-  <!-- Animated Bubbles -->
-  <div class="bubbles">
-    <div class="bubble b1"></div><div class="bubble b2"></div>
-    <div class="bubble b3"></div><div class="bubble b4"></div>
-    <div class="bubble b5"></div><div class="bubble b6"></div>
-    <div class="bubble b7"></div><div class="bubble b8"></div>
-  </div>
-  <!-- Glowing Particles -->
-  <div class="particles" id="particles"></div>
-  <!-- Ocean Waves -->
-  <div class="ocean">
-    <div class="wave"></div>
-    <div class="wave2"></div>
-    <div class="wave3"></div>
-  </div>
-
-  <div class="hero-content">
-    <div class="hero-badge">🌊 Bangalore's #1 Trusted Scrap Dealer</div>
-    <h1>BM <span class="brand">ENTERPRISE</span><br/>Scrap Solutions</h1>
-    <p>Your one-stop solution for all types of scrap buying, selling & recycling in Bangalore.<br/>
-    Best prices · Free doorstep pickup · Instant cash payment.</p>
-    <div class="hero-btns">
-      <a href="#contact" class="btn-primary">📋 Get Free Quote</a>
-      <a href="tel:+917795367887" class="btn-secondary">📞 Book Pickup Now</a>
-    </div>
-    <div class="hero-stats">
+  <div class="hero-card">
+    <div class="hero-content hero-copy">
+      <div class="hero-kicker">BM ENTERPRISE</div>
+      <h1>We help businesses and homes recycle smarter with <span class="brand">trusted scrap services</span>.</h1>
+      <p>Professional scrap collection in Bangalore with transparent rates, accurate weighing, and dependable doorstep pickup for households, offices, and industries.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Get a Free Quote</a>
+        <a href="tel:+919876543210" class="btn-secondary">Book Pickup</a>
+      </div>
+      <div class="hero-stats">
       <div class="stat-box zoom-in d1">
         <h3 data-count="10">0</h3><p>Years Experience</p>
       </div>
@@ -747,6 +750,7 @@ footer::before{
       </div>
       <div class="stat-box zoom-in d4">
         <h3 data-count="100">0</h3><p>Eco-Friendly %</p>
+      </div>
       </div>
     </div>
   </div>
@@ -764,7 +768,7 @@ footer::before{
 <!-- ===================== SERVICES ===================== -->
 <section class="services section-pad" id="services">
   <div class="section-title">
-    <h2>🌊 Our Services</h2>
+    <h2>Our Services</h2>
     <p>Comprehensive scrap management services across Bangalore with complete transparency and best market rates.</p>
   </div>
   <div class="services-grid">
@@ -800,7 +804,7 @@ footer::before{
 <!-- ===================== WHY CHOOSE US ===================== -->
 <section class="ocean-bg section-pad" id="about">
   <div class="section-title light">
-    <h2>🏆 Why Choose BM Enterprise?</h2>
+    <h2>Why Choose BM Enterprise?</h2>
     <p>Trusted by thousands of households and businesses across Bangalore.</p>
   </div>
   <div class="why-grid">
@@ -817,7 +821,7 @@ footer::before{
 <!-- ===================== HOW IT WORKS ===================== -->
 <section class="how section-pad">
   <div class="section-title">
-    <h2>🔄 How It Works?</h2>
+    <h2>How It Works</h2>
     <p>Sell your scrap in just 3 simple steps — quick, easy, hassle-free!</p>
   </div>
   <div class="steps">
@@ -834,7 +838,7 @@ footer::before{
 <!-- ===================== PRICING ===================== -->
 <section class="section-pad gray-bg" id="pricing">
   <div class="section-title">
-    <h2>💰 Current Scrap Rates – Bangalore</h2>
+    <h2>Current Scrap Rates - Bangalore</h2>
     <p>*Rates are approximate and subject to market fluctuations. Call us for exact current rates.</p>
   </div>
   <div class="table-wrap fade-up">
@@ -864,7 +868,7 @@ footer::before{
 <!-- ===================== TESTIMONIALS ===================== -->
 <section class="testimonials section-pad">
   <div class="section-title">
-    <h2>💬 What Our Customers Say</h2>
+    <h2>What Our Customers Say</h2>
     <p>Thousands of satisfied customers across Bangalore trust BM Enterprise.</p>
   </div>
   <div class="reviews-grid">
@@ -887,12 +891,12 @@ footer::before{
 <!-- ===================== CONTACT ===================== -->
 <section class="contact section-pad" id="contact">
   <div class="section-title">
-    <h2>📞 Contact Us</h2>
+    <h2>Contact Us</h2>
     <p>Get in touch for free pickup booking, scrap valuation or any inquiry. We serve all areas of Bangalore!</p>
   </div>
   <div class="contact-grid">
     <div class="contact-info fade-left">
-      <h3>Get In Touch 🌊</h3>
+      <h3>Get In Touch</h3>
       <div class="contact-item">
         <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
         <div class="contact-item-text">
@@ -923,7 +927,7 @@ footer::before{
       </div>
     </div>
     <div class="contact-form fade-right">
-      <h3>📋 Book Free Pickup</h3>
+      <h3>Book Free Pickup</h3>
       <div id="form-msg" class="form-msg hidden"></div>
       <form id="pickupForm">
         <div class="form-row">
@@ -959,7 +963,7 @@ footer::before{
           <label>Additional Message</label>
           <textarea id="message" placeholder="Tell us about scrap quantity, preferred pickup time, etc."></textarea>
         </div>
-        <button type="submit" class="submit-btn" id="submitBtn">🚚 Book Free Pickup Now</button>
+        <button type="submit" class="submit-btn" id="submitBtn">Book Free Pickup Now</button>
       </form>
     </div>
   </div>
@@ -987,7 +991,7 @@ footer::before{
       <div class="footer-social">
         <a class="social-icon" href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         <a class="social-icon" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a class="social-icon" href="https://wa.me/917795367887" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a class="social-icon" href="https://wa.me/919876543210" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         <a class="social-icon" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
       </div>
     </div>
@@ -1013,7 +1017,7 @@ footer::before{
       <h4>Contact Info</h4>
       <ul>
         <li><a href="#"><i class="fas fa-map-marker-alt"></i>Bangalore, Karnataka</a></li>
-        <li><a href="tel:+917795367887"><i class="fas fa-phone"></i>{{ contact_info.phone1 }}</a></li>
+        <li><a href="tel:+919876543210"><i class="fas fa-phone"></i>{{ contact_info.phone1 }}</a></li>
         <li><a href="mailto:info@bmenterprise.in"><i class="fas fa-envelope"></i>{{ contact_info.email1 }}</a></li>
         <li><a href="#"><i class="fas fa-clock"></i>Mon–Sat: 8AM–7PM</a></li>
       </ul>
@@ -1031,6 +1035,7 @@ footer::before{
 // ---- Generate Particles ----
 (function(){
   const container = document.getElementById('particles');
+  if(!container) return;
   for(let i = 0; i < 25; i++){
     const p = document.createElement('div');
     p.className = 'particle';
@@ -1157,7 +1162,7 @@ document.getElementById('pickupForm').addEventListener('submit', async function(
     msgBox.className = 'form-msg error';
     msgBox.textContent = '❌ Something went wrong. Please call us directly!';
   }
-  btn.innerHTML = '🚚 Book Free Pickup Now';
+  btn.innerHTML = 'Book Free Pickup Now';
   btn.disabled = false;
 });
 </script>
@@ -1206,19 +1211,6 @@ def scrap_rates():
 @app.route("/api/services")
 def get_services():
     return jsonify({"status":"success","data":services})
-
-@app.route("/sitemap.xml")
-def sitemap():
-    xml = '''<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://bm-enterprise.onrender.com/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-</urlset>'''
-    from flask import Response
-    return Response(xml, mimetype='application/xml')
 
 # ============================================================
 # RUN
